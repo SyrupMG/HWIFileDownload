@@ -1,5 +1,9 @@
 # HWIFileDownload
 
+HWIFileDownload originally developed by Heiko Wichmann. This repo is fork, that supports tvOS. Maybe some day main repo would support tvOS too, but bot today
+
+[original repo](https://github.com/Heikowi/HWIFileDownload)
+
 HWIFileDownload simplifies file download with `NSURLSession` on iOS. Parallel file download can be controlled individually with all possible actions: start, cancel, pause, resume. Download progress is reported natively with `NSProgress` for every single file and in total.
 
 ## Features
@@ -35,7 +39,7 @@ All files need to be added to your app project.
 To integrate HWIFileDownload into your Xcode project with [CocoaPods](http://cocoapods.org), specify it in your `Podfile`:
 
 ```ruby
-pod 'HWIFileDownload'
+pod 'SMG-HWIFileDownload'
 ```
 
 Then run
@@ -110,7 +114,7 @@ The app needs to hold an instance of the `HWIFileDownloader` that manages the do
 - (void)cancelDownloadWithIdentifier:(nonnull NSString *)aDownloadIdentifier;
 - (nullable HWIFileDownloadProgress *)downloadProgressForIdentifier:(nonnull NSString *)aDownloadIdentifier;
 ```
-	
+
 ### Progress
 
 `HWIFileDownloadProgress` exposes these properties:
